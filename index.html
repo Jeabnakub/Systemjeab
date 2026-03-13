@@ -12,7 +12,7 @@
     * { font-family: 'Prompt', sans-serif; }
     
     .gradient-bg {
-      background: linear-gradient(135deg, #CE2B37 0%, #FFFFFF 25%, #2E4B8E 50%, #FFFFFF 75%, #CE2B37 100%);
+      background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 25%, #1f1f1f 50%, #2d2d2d 75%, #1a1a1a 100%);
       position: relative;
       overflow: hidden;
     }
@@ -116,13 +116,13 @@
     }
     
     .glass-effect {
-      background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(249, 250, 251, 1) 100%);
+      background: linear-gradient(135deg, rgba(45, 45, 45, 1) 0%, rgba(30, 30, 30, 1) 100%);
       backdrop-filter: blur(20px);
-      border: 2.5px solid rgba(59, 130, 246, 0.6);
+      border: 2.5px solid rgba(100, 200, 255, 0.3);
       box-shadow: 
-        0 12px 40px rgba(59, 130, 246, 0.2),
-        0 0 20px rgba(59, 130, 246, 0.15) inset,
-        0 2px 8px rgba(59, 130, 246, 0.1);
+        0 12px 40px rgba(50, 150, 200, 0.1),
+        0 0 20px rgba(100, 200, 255, 0.08) inset,
+        0 2px 8px rgba(100, 200, 255, 0.05);
     }
     
     .pulse-dot {
@@ -189,8 +189,8 @@
   <script src="/_sdk/element_sdk.js" type="text/javascript"></script>
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js" type="text/javascript"></script>
  </head>
- <body class="h-full overflow-auto">
-  <div id="app-container" class="w-full gradient-bg">
+ <body class="h-full overflow-auto m-0 p-0">
+  <div id="app-container" class="w-full h-full gradient-bg">
    <!-- Decorative Elements -->
    <div class="absolute inset-0 overflow-hidden pointer-events-none">
     <div class="absolute top-10 left-10 w-48 h-48 bg-blue-200/20 rounded-full blur-3xl animate-pulse"></div>
@@ -201,11 +201,11 @@
    <div class="relative z-10 px-4 py-4 md:px-6 lg:px-8">
     <!-- Header Section -->
     <header class="text-center mb-6">
-     <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-1.5 rounded-full mb-3 header-badge">
-      <span class="w-2 h-2 bg-green-400 rounded-full pulse-dot"></span> <span class="text-gray-700 text-xs font-medium">✓ ระบบออนไลน์พร้อมใช้งาน</span>
+     <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-1.5 rounded-full mb-3 header-badge">
+      <span class="w-2 h-2 bg-green-400 rounded-full pulse-dot"></span> <span class="text-gray-300 text-xs font-medium">✓ ระบบออนไลน์พร้อมใช้งาน</span>
      </div>
-     <h1 id="main-title" class="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-1 drop-shadow-lg leading-snug">ระบบแสดงข้อมูลการดำเนินการที่เกี่ยวข้องกับ SUPPORTEWP</h1>
-     <h2 id="subtitle" class="text-sm md:text-base text-blue-600 font-medium mb-2">กลุ่มงานพิจารณาอนุญาต 2</h2>
+     <h1 id="main-title" class="text-xl md:text-2xl lg:text-3xl font-bold text-white mb-1 drop-shadow-lg leading-snug">ระบบแสดงข้อมูลการดำเนินการที่เกี่ยวข้องกับ SUPPORTEWP</h1>
+     <h2 id="subtitle" class="text-sm md:text-base text-cyan-400 font-medium mb-2">กลุ่มงานพิจารณาอนุญาต 2</h2>
      <div class="flex justify-center gap-1.5 mt-3">
       <div class="w-12 h-1 bg-gray-400 rounded-full stagger-1 floating-shape"></div>
       <div class="w-6 h-1 bg-gray-300 rounded-full stagger-2 floating-shape"></div>
@@ -224,8 +224,8 @@
         </div>
         <div class="flex-1 min-w-0">
          <span class="inline-block px-3 py-1.5 bg-blue-100 text-blue-700 text-sm font-semibold rounded-full mb-2 card-badge">📊 รายงาน</span>
-         <h3 class="text-lg font-bold text-gray-800 mb-2 leading-snug">ระบบแสดงข้อมูลสรุปรายงานการปฏิบัติงาน</h3>
-         <p class="text-gray-600 text-sm">ดูข้อมูลสรุปผลการปฏิบัติงานทั้งหมด</p>
+         <h3 class="text-lg font-bold text-gray-100 mb-2 leading-snug">ระบบแสดงข้อมูลสรุปรายงานการปฏิบัติงาน</h3>
+         <p class="text-gray-400 text-sm">ดูข้อมูลสรุปผลการปฏิบัติงานทั้งหมด</p>
         </div>
        </div>
        <div class="mt-4 pt-3 border-t border-blue-100 flex items-center justify-between">
@@ -247,8 +247,8 @@
         </div>
         <div class="flex-1 min-w-0">
          <span class="inline-block px-3 py-1.5 bg-emerald-100 text-emerald-700 text-sm font-semibold rounded-full mb-2 card-badge">✍️ บันทึก</span>
-         <h3 class="text-lg font-bold text-gray-800 mb-2 leading-snug">ระบบบันทึกข้อมูลสรุปรายงานการปฏิบัติงาน</h3>
-         <p class="text-gray-600 text-sm">บันทึกและจัดการข้อมูลการปฏิบัติงาน</p>
+         <h3 class="text-lg font-bold text-gray-100 mb-2 leading-snug">ระบบบันทึกข้อมูลสรุปรายงานการปฏิบัติงาน</h3>
+         <p class="text-gray-400 text-sm">บันทึกและจัดการข้อมูลการปฏิบัติงาน</p>
         </div>
        </div>
        <div class="mt-4 pt-3 border-t border-emerald-100 flex items-center justify-between">
@@ -270,8 +270,8 @@
         </div>
         <div class="flex-1 min-w-0">
          <span class="inline-block px-3 py-1.5 bg-violet-100 text-violet-700 text-sm font-semibold rounded-full mb-2 card-badge">🎯 จ่ายงาน</span>
-         <h3 class="text-lg font-bold text-gray-800 mb-2 leading-snug">ระบบแสดงข้อมูลการจ่ายงาน SUPPORTEWP</h3>
-         <p class="text-gray-600 text-sm">ติดตามและจัดการการจ่ายงาน</p>
+         <h3 class="text-lg font-bold text-gray-100 mb-2 leading-snug">ระบบแสดงข้อมูลการจ่ายงาน SUPPORTEWP</h3>
+         <p class="text-gray-400 text-sm">ติดตามและจัดการการจ่ายงาน</p>
         </div>
        </div>
        <div class="mt-4 pt-3 border-t border-violet-100 flex items-center justify-between">
@@ -293,8 +293,8 @@
         </div>
         <div class="flex-1 min-w-0">
          <span class="inline-block px-3 py-1.5 bg-rose-100 text-rose-700 text-sm font-semibold rounded-full mb-2 card-badge">⚠️ ปัญหา</span>
-         <h3 class="text-lg font-bold text-gray-800 mb-2 leading-snug">ระบบบริหารจัดการปัญหาแรงงานต่างด้าว</h3>
-         <p class="text-gray-600 text-sm">จัดการและติดตามปัญหาแรงงานต่างด้าว</p>
+         <h3 class="text-lg font-bold text-gray-100 mb-2 leading-snug">ระบบบริหารจัดการปัญหาแรงงานต่างด้าว</h3>
+         <p class="text-gray-400 text-sm">จัดการและติดตามปัญหาแรงงานต่างด้าว</p>
         </div>
        </div>
        <div class="mt-4 pt-3 border-t border-rose-100 flex items-center justify-between">
@@ -306,53 +306,34 @@
          </svg>
         </div>
        </div>
-      </div></a> <!-- Card 5: Import Data --> <a href="https://jeabnakub.github.io/adddata" target="_blank" rel="noopener noreferrer" class="block">
-      <div class="card-hover shine glass-effect rounded-2xl p-7 h-full">
-       <div class="flex items-start gap-4">
-        <div class="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-amber-500 to-orange-600 rounded-lg flex items-center justify-center shadow-lg icon-float stagger-5">
-         <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
-         </svg>
-        </div>
-        <div class="flex-1 min-w-0">
-         <span class="inline-block px-3 py-1.5 bg-amber-100 text-amber-700 text-sm font-semibold rounded-full mb-2 card-badge">⬆️ นำเข้าข้อมูล</span>
-         <h3 class="text-lg font-bold text-gray-800 mb-2 leading-snug">ระบบบันทึกข้อมูลแรงงานต่างด้าว</h3>
-         <p class="text-gray-600 text-sm">สำหรับข้อมูลที่ไม่พบใน eworkpermit.doe.go.th</p>
-        </div>
-       </div>
-       <div class="mt-4 pt-3 border-t border-amber-100 flex items-center justify-between">
-        <span class="text-sm text-gray-500">🔗 คลิกเพื่อเปิด</span>
-        <div class="flex items-center gap-1 text-amber-600 font-medium text-sm">
-         <span>เข้าสู่ระบบ</span>
-         <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-         </svg>
-        </div>
-       </div>
-      </div></a> <!-- Card 6: Google Sheet --> <a href="https://docs.google.com/spreadsheets/d/1lr6zFC81bpzqb42v_UDeP_xwDBHxOZTy3uUDG1WFiOo/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="block">
-      <div class="card-hover shine glass-effect rounded-2xl p-7 h-full">
-       <div class="flex items-start gap-4">
-        <div class="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-green-500 to-green-600 rounded-lg flex items-center justify-center shadow-lg icon-float stagger-6">
-         <svg class="w-7 h-7 text-white" viewbox="0 0 24 24" fill="currentColor">
-          <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z" /> <path d="M7 7h2v2H7zm0 4h2v2H7zm0 4h2v2H7zm4-8h6v2h-6zm0 4h6v2h-6zm0 4h6v2h-6z" />
-         </svg>
-        </div>
-        <div class="flex-1 min-w-0">
-         <span class="inline-block px-3 py-1.5 bg-green-100 text-green-700 text-sm font-semibold rounded-full mb-2 card-badge">📊 ฐานข้อมูล</span>
-         <h3 class="text-lg font-bold text-gray-800 mb-2 leading-snug">ฐานข้อมูล Google Sheet</h3>
-         <p class="text-gray-600 text-sm">เข้าถึงและจัดการฐานข้อมูลหลัก</p>
-        </div>
-       </div>
-       <div class="mt-4 pt-3 border-t border-green-100 flex items-center justify-between">
-        <span class="text-sm text-gray-500">🌐 เปิด Sheet</span>
-        <div class="flex items-center gap-1 text-green-600 font-medium text-sm">
-         <span>ไปที่ Sheet</span>
-         <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-         </svg>
-        </div>
-       </div>
       </div></a>
+    </div><!-- Card 5: Google Sheet - Centered Row -->
+    <div class="max-w-7xl mx-auto flex justify-center mb-5">
+     <div class="w-full md:w-1/2"><a href="https://docs.google.com/spreadsheets/d/1lr6zFC81bpzqb42v_UDeP_xwDBHxOZTy3uUDG1WFiOo/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="block">
+       <div class="card-hover shine glass-effect rounded-2xl p-7 h-full">
+        <div class="flex items-start gap-4">
+         <div class="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-green-500 to-green-600 rounded-lg flex items-center justify-center shadow-lg icon-float stagger-5">
+          <svg class="w-7 h-7 text-white" viewbox="0 0 24 24" fill="currentColor">
+           <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z" /> <path d="M7 7h2v2H7zm0 4h2v2H7zm0 4h2v2H7zm4-8h6v2h-6zm0 4h6v2h-6zm0 4h6v2h-6z" />
+          </svg>
+         </div>
+         <div class="flex-1 min-w-0">
+          <span class="inline-block px-3 py-1.5 bg-green-100 text-green-700 text-sm font-semibold rounded-full mb-2 card-badge">📊 ฐานข้อมูล</span>
+          <h3 class="text-lg font-bold text-gray-100 mb-2 leading-snug">ฐานข้อมูล Google Sheet</h3>
+          <p class="text-gray-400 text-sm">เข้าถึงและจัดการฐานข้อมูลหลัก</p>
+         </div>
+        </div>
+        <div class="mt-4 pt-3 border-t border-green-100 flex items-center justify-between">
+         <span class="text-sm text-gray-500">🌐 เปิด Sheet</span>
+         <div class="flex items-center gap-1 text-green-600 font-medium text-sm">
+          <span>ไปที่ Sheet</span>
+          <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+          </svg>
+         </div>
+        </div>
+       </div></a>
+     </div>
     </div>
    </div><!-- Footer with Reactions -->
    <footer class="mt-4 text-center pb-2">
@@ -361,7 +342,7 @@
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
      </svg><span class="text-emerald-300 text-sm font-medium">System By Jeab</span>
     </div>
-    <p class="text-white/40 text-sm mt-1.5">© 2024 All rights reserved.</p>
+    <p class="text-white/30 text-sm mt-1.5">© 2024 All rights reserved.</p>
    </footer>
   </div>
   <script>
@@ -386,5 +367,5 @@
       });
     });
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9d9faa8f204ba1ba',t:'MTc3MzExNzg4OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9db8c2fd94ae893a',t:'MTc3MzM4MTAzMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
